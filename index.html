@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Practica 2</title>
+</head>
+<body>
+    <h1>Rafael Antonio Patricio Ayllon</h1>
+    <div class="container">
+        <form>
+            <label>Numero 1: </label>
+            <input type="number" id="var1" autofocus>
+            <label>Numero 2: </label>
+            <input type="number" id="var2" autofocus><br><br>
+            <button type="button" onclick="sumar();">SUMAR</button>
+            <button type="button" onclick="restar();">RESTAR</button>
+            <button type="button" onclick="multiplicar();">MULTIPLICAR</button>
+            <button type="button" onclick="dividir();">DIVIDIR</button>
+            <div class="container-result">
+                <P>RESULTADO<br><span id="result"></span></P>
+            </div>
+            <h2>IMC</h2>
+            <label>Peso: </label>
+            <input type="number" id="peso" step="0.01">
+            <label>Altura: </label>
+            <input type="number" id="altura" step="0.01"><br>
+            <input type="radio" name="sexo">Masculino
+            <input type="radio" name="sexo">Femenino <br>
+            <button type="button" onclick="IMC();" class="imc">IMC</button>
+            <div class="container-imc">
+                <P>RESULTADO<br><span id="imc"></span></P>
+            </div>
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
